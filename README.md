@@ -7,7 +7,8 @@ Digi Test
 
 - Tailwindcss
 - ReactJs
-- Vite (Testing framework)
+- Vite
+- Vitest (Testing framework)
 - Other Libraries: Prettier (Code formatter), ESLint (Linter)
 
 ## Getting Started
