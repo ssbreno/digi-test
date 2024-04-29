@@ -13,15 +13,17 @@
     "coverage": "vitest run --coverage"
   },
   "dependencies": {
+    "@stitches/react": "1.2.8",
     "axios": "^1.4.0",
+    "keen-slider": "6.8.6",
+    "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "keen-slider": "6.8.6",
-    "@stitches/react": "1.2.8",
+    "react-router-dom": "^6.23.0",
+    "react-toastify": "^9.0.8",
     "styled-components": "5.3.5",
     "tailwindcss": "^3.4.3",
-    "react-toastify": "^9.0.8"
-
+    "zustand": "^4.5.2"
   },
   "devDependencies": {
     "@faker-js/faker": "^8.0.2",
