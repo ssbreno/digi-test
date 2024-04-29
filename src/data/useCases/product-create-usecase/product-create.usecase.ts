@@ -12,7 +12,7 @@ export class ProductCreateUseCase implements IProductCreate {
   async create(params: IProductCreate.Params): Promise<ProductModel> {
     const { data } = await this.httpClient.request({
       method: 'post',
-      url: 'http://localhost:3333/posts',
+      url: 'http://localhost:3333/products',
       body: {
         id: params.id_internal,
         name: params.name_internal,

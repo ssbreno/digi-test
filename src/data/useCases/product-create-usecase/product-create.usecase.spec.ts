@@ -35,7 +35,7 @@ describe('ProductCreateUseCase', () => {
 
     expect(axiosHttpClientInMemory.method).toBe('post');
     expect(axiosHttpClientInMemory.url).toBe(
-      'http://localhost:3333/posts'
+      'http://localhost:3333/products'
     );
     expect(axiosHttpClientInMemory.data).toEqual({
       id: '01',

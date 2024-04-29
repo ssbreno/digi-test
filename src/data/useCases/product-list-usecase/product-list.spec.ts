@@ -28,7 +28,7 @@ describe('ProductListUseCase', () => {
 
     expect(axiosHttpClientInMemory.method).toBe('get');
     expect(axiosHttpClientInMemory.url).toBe(
-      'http://localhost:3333/posts'
+      'http://localhost:3333/products'
     );
   });
 

@@ -1,4 +1,8 @@
+import { toast } from 'react-toastify'
+
+import { ProductModel } from '@domain/models';
 import useCartStore from '@presentation/store/cart';
+
 import {
   Container,
   PricingAndAddToCart,
@@ -8,9 +12,7 @@ import {
   ContentDetailAndName,
 } from './styles'
 
-import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
-import { ProductModel } from '@domain/models';
 
 
 type Props = {
@@ -35,7 +37,7 @@ export function ProductSummary({ product }: Props) {
         <ContentDetailAndName>
           <p className="name">{product?.name_internal}</p>
           <p className="detail">{product?.detail_internal}</p>
-          {product?.name_internal && <p className="moreDetail">Hero: {product?.hero_internal}</p>}
+          {product?.hero_internal && <p className="moreDetail">Hero: {product?.hero_internal}</p>}
           {product?.info_internal && <p className="moreDetail">Info: {product?.info_internal}</p>}
           {product?.offer_internal && <p className="moreDetail">Offer: {product?.offer_internal}</p>}
 

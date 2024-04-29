@@ -17,7 +17,7 @@ describe('ProductDeleteUseCase', () => {
 
         expect(axiosHttpClientInMemory.method).toBe('delete');
         expect(axiosHttpClientInMemory.url).toBe(
-            `http://localhost:3333/posts/${productsListAPI[0].id}`
+            `http://localhost:3333/products/${productsListAPI[0].id}`
         );
     });
 });

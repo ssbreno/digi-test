@@ -1,6 +1,7 @@
-import { ProductModel } from "@domain/models";
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
+
+import { ProductModel } from "@domain/models";
 
 interface CartState {
   cartItems: ProductModel[];

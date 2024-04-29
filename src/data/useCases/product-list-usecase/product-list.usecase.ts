@@ -12,7 +12,7 @@ export class ProductListUseCase implements IProductList {
   async list(): Promise<IProductList.Model> {
     const { data } = await this.httpClient.request({
       method: 'get',
-      url: 'http://localhost:3333/posts',
+      url: 'http://localhost:3333/products',
     });
 
     return data.map(productModelAdapter.toProductModel);

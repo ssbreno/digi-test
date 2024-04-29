@@ -9,7 +9,7 @@ export class ProductDeleteUseCase implements IProductDelete {
   async delete(productId: string): Promise<void> {
     await this.httpClient.request({
       method: 'delete',
-      url: `http://localhost:3333/posts/${productId}`, // Supondo que o endpoint para excluir um produto seja /products/:productId
+      url: `http://localhost:3333/products/${productId}`, // Supondo que o endpoint para excluir um produto seja /products/:productId
     });
   }
 }
